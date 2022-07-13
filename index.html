@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Position in Css Static Relative absolute fixed </title>
+    <style>
+        .container{
+            height: 4440px;
+            background-color: burlywood;
+            display: grid;
+            grid-template-columns: repeat(4,1fr);
+            grid-gap: 30px;
+           
+        }
+        .box-item1{
+              height: 300px;
+              width: 250px;
+              background-color: blueviolet;
+
+        }
+          .box-item2{
+            display: grid;
+             height: 300px;
+              width: 250px;
+              background-color:peru;
+              position: absolute;
+              top: 125px;
+                text-align: center;
+               align-items: center;
+               justify-items: center;  
+        }
+         .box-item3{
+            display: grid;
+             height: 300px;
+              width: 250px;
+              background-color:rgb(113, 223, 22);
+             position: relative;
+              top: 125px;
+                text-align: center;
+               align-items: center;
+               justify-items: center;
+        }
+
+         .box-item4{
+            display: grid;
+             height: 300px;
+              width: 250px;
+              background-color:rgb(227, 205, 205);
+                position: fixed;
+              top: 300px;
+                text-align: center;
+               align-items: center;
+               justify-items: center;
+        }
+        
+        .box-item5{
+            display: grid;
+              height: 300px;
+              width: 250px;
+              background-color:rgb(214, 12, 130);
+              position: sticky;
+              top: 300px;
+                text-align: center;
+               align-items: center;
+               justify-items: center;
+        }
+        
+        
+    </style> 
+</head>
+<body>
+    <div class="container">
+        <div class="box box-item1">box1</div>
+        <div class="box box-item2">box2 <br> [position absolute]  </div>
+        <div class="box box-item3">box3 <br> [position Relative]</div>
+        <div class="box box-item4">box4 <br> [position fixed] </div>
+         <div class="box box-item5">box5 <br> [position sticky] </div>
+    </div>
+</body>
+</html>
